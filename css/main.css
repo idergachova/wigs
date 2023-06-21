@@ -57,10 +57,12 @@
 
 .aside .shoes::before{
     background-image: url("../img/icons/shoes.png");
+    background-size: cover;
 }
 
 .aside .accessories::before{
     background-image: url("../img/icons/accessories.png");
+    background-size: cover;
 }
 .aside .activ::before{
     background-image: url("../img/icons/activewear.png");
@@ -70,6 +72,7 @@
 }
 .aside .inspir::before{
     background-image: url("../img/icons/inspiration.png");
+    background-size: cover;
 }
 
 .aside nav a{
@@ -90,7 +93,7 @@
 .header nav{
     display: flex;
     justify-content: flex-end;
-    gap: 11px;
+    gap: 32px;
     padding: 46px 56px 66px;
 }
 
@@ -137,14 +140,23 @@
 .main_link {
     display: flex;
     flex-direction: column;
-    gap: 21px;
+    gap: 20px;
 }
 
-.main img {
-    max-width: 542px;
+.main_link img {
+    max-width: 539px;
 }
 
-.vertical {
+.horizont a{
+    max-height: 180px;
+}
+
+.vertical a{
+    max-height: 382px;
+}
+
+
+.vertical{
     display: flex;
     gap: 21px;
 }
@@ -152,7 +164,7 @@
 .horizont {
     display: flex;
     flex-direction: column;
-    gap: 21px;
+    gap: 20px;
 }
 
 
