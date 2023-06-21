@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #E5E5E5;
+}
+
+.wrapper{
+    background: rgba(246, 244, 244, 0.8);
+}
+
+html, body {
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}

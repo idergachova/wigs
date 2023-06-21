@@ -1,0 +1,159 @@
+.wrapper {
+    display: grid;
+    grid-template-areas: "aside header"
+                         "aside main";
+    grid-template-columns: 252px 1fr;
+    grid-template-rows: auto 1fr;
+    
+
+}
+
+/* ASIDE */
+.aside{
+    grid-area: aside;
+    background-color: #fff;
+    padding: 51px 55px;
+    border-radius: 0px 20px 20px 0px;
+ 
+}
+
+.explore{
+    margin-top: 57px;
+    margin-bottom: 54px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+
+.aside ul{
+    display: grid;
+    gap: 30px;
+}
+
+.aside li{
+    padding-left: 30px;
+    position: relative;
+}    
+
+.aside li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+}
+
+.aside .new::before{
+    background-image: url('../img/icons/new.png');
+}
+
+.aside .clother::before{
+    background-image: url('../img/icons/clothing.png');
+}
+
+.aside .shoes::before{
+    background-image: url("../img/icons/shoes.png");
+}
+
+.aside .accessories::before{
+    background-image: url("../img/icons/accessories.png");
+}
+.aside .activ::before{
+    background-image: url("../img/icons/activewear.png");
+}
+.aside .gifts::before{
+    background-image: url("../img/icons/gifts.png");
+}
+.aside .inspir::before{
+    background-image: url("../img/icons/inspiration.png");
+}
+
+.aside nav a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.7099px;
+    line-height: 19px;
+    color: #000000;
+    }
+
+/* ASIDE END*/
+
+/* HEADER */
+.header{
+    grid-area: header;
+}
+.header nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 11px;
+    padding: 46px 56px 66px;
+}
+
+.menu{
+    display: flex;
+    gap: 42px;
+}
+
+ .header li {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    position: relative;
+ }
+
+ .line_before::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    display: block;
+    height: 1px;
+    background: #000;
+    width: calc(100% - 6px);
+}
+
+ .icons{
+    display: flex;
+    gap: 25px;
+ }
+
+/* HEADER END*/
+
+
+/* MAIN */
+.main{
+    grid-area: main;
+    display: flex;
+    gap: 21px;
+    padding: 0 56px 64px 37px;
+}
+
+.main_link {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.main img {
+    max-width: 542px;
+}
+
+.vertical {
+    display: flex;
+    gap: 21px;
+}
+
+.horizont {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+
+/* MAIN END */
